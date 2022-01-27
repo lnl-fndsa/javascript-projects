@@ -1,0 +1,74 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@300&display=swap');
+
+/* Variables */
+:root{
+    /**/
+    --color-white-light: rgba(255, 255, 255, 1);
+    --color-white-medium:rgba(255, 255, 255, 0.7);
+    --color-white-darken:rgba(255, 255, 255, 0.5);
+    /**/
+    --color-black-1: #000;
+    --color-black-2: #333;
+    /**/
+    --color-grey-1: #666;
+    --color-grey-2: #ccc;
+    --color-grey-3: #efefef;
+    /**/
+    --ff-primary: "Montserrat", sans-serif;
+    --ff-secondary: "Raleway", sans-serif;
+    /**/
+    --fs-primary: 16px;
+    --fs-1: 0.8rem;
+    --fs-2: 1rem;
+    --fs-3: 1.2rem;
+    --fs-4: 2rem;
+    /**/
+    --bg-header : radial-gradient(circle at 48% 77%, rgba(27, 27, 27, 0.04) 0%, rgba(27, 27, 27, 0.04) 50%, rgba(135, 135, 135, 0.04) 50%, rgba(135, 135, 135, 0.04) 100%),
+    radial-gradient(circle at 74% 36%, rgba(223, 223, 223, 0.04) 0%, rgba(223, 223, 223, 0.04) 50%, rgba(113, 113, 113, 0.04) 50%, rgba(113, 113, 113, 0.04) 100%),
+    radial-gradient(circle at 62% 13%, rgba(16, 16, 16, 0.04) 0%, rgba(16, 16, 16, 0.04) 50%, rgba(168, 168, 168, 0.04) 50%, rgba(168, 168, 168, 0.04) 100%),
+    linear-gradient(223deg, rgb(37, 143, 136), rgb(87, 117, 249))
+}
+
+/* Main */
+
+html{
+    font-size: var(--fs-primary);
+}
+
+body{
+    font-family: var(--ff-secondary);
+    background-color: var(--color-grey-3);
+}
+
+header{
+    background-image: var(--bg-header);
+	color: var(--color-white-light);
+}
+
+/* Styles */
+
+section{
+    font-size: var(--fs-3);
+    line-height: 1.6;
+}
+
+.container{
+    background-color: var(--color-white-light);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.spoiler-container{
+    user-select: none;
+    cursor: default;
+}
+
+.spoiler-content{
+    visibility: hidden;
+}
+
+.spoiler-content.visible{
+    user-select: text;
+    visibility: visible;
+    background-color: transparent;
+}
